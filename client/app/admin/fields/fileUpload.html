@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-4">
+    <!--input type="file" multiple id="images" name="images" -->
+    <button
+      class="btn btn-default"
+      ngf-select
+      ng-model="entry.values['images']"
+      ngf-change="onFileSelect($files)"
+      ngf-multiple="true"
+      >Cargar</button>
+
+  </div>
+  <div class="col-md-2">
+    <button
+      type="button"
+      class="btn btn-success btn-s"
+      ng-click="upload()">
+      <span class="glyphicon glyphicon-upload"></span> Subir
+    </button>
+  </div>
+</div>

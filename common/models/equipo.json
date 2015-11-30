@@ -1,0 +1,39 @@
+{
+  "name": "Equipo",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price_cuit": {
+      "type": "string"
+    },
+    "price_dni": {
+      "type": "string"
+    },
+    "cuatroG": {
+      "type": "boolean"
+    },
+    "particular": {
+      "type": "boolean"
+    },
+    "empresa": {
+      "type": "boolean"
+    },
+    "marca": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

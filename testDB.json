@@ -1,0 +1,68 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Slider": 5,
+    "Faja": 3,
+    "container": 1,
+    "Equipo": 6,
+    "Destacado": 18,
+    "Categoria": 4,
+    "Promotion": 9,
+    "SeccionX": 2,
+    "Bloque": 8
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Slider": {
+      "1": "{\"title\":\"asdasdaasdasd\",\"description\":\"dasdasdadaasd\",\"image\":\"Mechanic Eye.jpg\",\"images\":[{}],\"id\":1}",
+      "2": "{\"title\":\"asdasd\",\"description\":\"asdsadasda\",\"image\":\"banner 3.jpg\",\"images\":[{}],\"id\":2}"
+    },
+    "Faja": {
+      "1": "{\"title\":\"Pasate a personal\",\"image\":\"image005 copia.jpg\",\"images\":[{}],\"id\":1}",
+      "2": "{\"title\":\"Renová tu personal\",\"image\":\"renova.jpg\",\"images\":[{}],\"id\":2}"
+    },
+    "container": {},
+    "Equipo": {
+      "1": "{\"3g\":true,\"description\":\"Nuevo motorola\",\"image\":\"samsung-galaxy-a3 copia.png\",\"name\":\"Motorla E LTE\",\"price_cuit\":\"$1506\",\"price_dni\":\"$1780\",\"images\":[{}],\"id\":1}",
+      "2": "{\"description\":\"sadasdasdsasdad\",\"image\":\"samsung-galaxy-core-prime copia.png\",\"name\":\"Sony XPERIA\",\"price_cuit\":\"1564\",\"price_dni\":\"132425\",\"4G\":true,\"images\":[{}],\"id\":2}",
+      "3": "{\"description\":\"sdasdasdadsd\",\"image\":\"nokia-lumia-635_copia_pjpsww.png\",\"name\":\"Nokia LUMIA\",\"price_cuit\":\"1434\",\"price_dni\":\"6363\",\"cuatroG\":true,\"images\":[{}],\"id\":3}",
+      "4": "{\"description\":\"asdadsasdada\",\"image\":\"nokia-lumia-635_copia_pjpsww.png\",\"name\":\"Nokia Lumia\",\"price_cuit\":\"1433\",\"price_dni\":\"3633\",\"cuatroG\":true,\"particular\":true,\"empresa\":false,\"images\":[{}],\"id\":4}",
+      "5": "{\"description\":\"adsasdasdada\",\"image\":\"nokia-lumia-635_copia_pjpsww.png\",\"name\":\"Sony XPERIA\",\"price_cuit\":\"1244\",\"price_dni\":\"12312\",\"cuatroG\":true,\"particular\":true,\"empresa\":true,\"images\":[{}],\"id\":5}"
+    },
+    "Destacado": {
+      "14": "{\"cuadro_1\":\"fantasma.png\",\"cuadro_2\":\"nob1.png\",\"cuadro_3\":\"nob2.png\",\"cuadro_4\":\"nob3.png\",\"description\":\"Lo mejor de motorla\",\"image\":\"nokia-lumia-635_copia_pjpsww.png\",\"name\":\"E Lte\",\"price_cuit\":null,\"price_dni\":\"1899\",\"cuatroG\":true,\"particular\":true,\"empresa\":false,\"categoriaId\":1,\"images\":[{}],\"id\":14,\"marca\":\"Motorla\"}",
+      "15": "{\"cuadro_1\":\"fantasma.png\",\"cuadro_2\":\"nob1.png\",\"cuadro_3\":\"nob2.png\",\"cuadro_4\":\"nob3.png\",\"description\":null,\"image\":\"nokia-lumia-635_copia_pjpsww.png\",\"name\":\"Test 2\",\"price_cuit\":null,\"price_dni\":null,\"cuatroG\":false,\"particular\":false,\"empresa\":false,\"categoriaId\":1,\"images\":[{}],\"id\":15}",
+      "16": "{\"cuadro_1\":null,\"cuadro_2\":null,\"cuadro_3\":null,\"cuadro_4\":null,\"description\":\"dsasdadsassdsad\",\"image\":null,\"name\":\"dadsa\",\"price_cuit\":\"asd\",\"price_dni\":\"adadadsa\",\"cuatroG\":true,\"particular\":true,\"empresa\":false,\"marca\":\"adasdasasdasdad\",\"categoriaId\":2,\"images\":[{}],\"id\":16}",
+      "17": "{\"cuadro_1\":null,\"cuadro_2\":null,\"cuadro_3\":null,\"cuadro_4\":null,\"iva\":true,\"description\":\"adasdasdas\",\"image\":null,\"name\":\"asdadasd\",\"price_cuit\":\"asdasd\",\"price_dni\":\"adasdad\",\"cuatroG\":true,\"particular\":false,\"empresa\":false,\"marca\":\"asda\",\"categoriaId\":2,\"id\":17}"
+    },
+    "Categoria": {
+      "1": "{\"nombre\":\"Línea nueva y cambio de terminal(DNI)\",\"descripcion\":\"\",\"id\":1}",
+      "2": "{\"nombre\":\"Trae tu línea a personal\",\"descripcion\":\"\",\"id\":2}",
+      "3": "{\"nombre\":\"Línea nueva y cambio de terminal(CUIT)\",\"descripcion\":\"\",\"id\":3}"
+    },
+    "Promotion": {
+      "2": "{\"title\":\"Promo 1\",\"image\":\"promo.jpg\",\"images\":[{}],\"id\":2}",
+      "4": "{\"title\":\"Promo 2\",\"image\":\"promo2.jpg\",\"images\":[{}],\"id\":4}",
+      "5": "{\"title\":\"Promo 3\",\"image\":\"promo2.jpg\",\"images\":[{}],\"id\":5}",
+      "6": "{\"title\":\"Promo 4\",\"image\":\"promo4.jpg\",\"images\":[{}],\"id\":6}",
+      "7": "{\"title\":\"Promo 5\",\"image\":\"promo4.jpg\",\"images\":[{}],\"id\":7}",
+      "8": "{\"title\":\"Promo 6\",\"image\":\"promo5.jpg\",\"images\":[{}],\"id\":8}"
+    },
+    "SeccionX": {
+      "1": "{\"nombre\":\"Servicio técnico\",\"descripcion\":\"Todo para tu celular\",\"id\":1}"
+    },
+    "Bloque": {
+      "5": "{\"image\":\"fantasma.png\",\"seccionXId\":1,\"id\":5}",
+      "6": "{\"image\":\"nob2.png\",\"seccionXId\":1,\"id\":6}",
+      "7": "{\"image\":\"asd.png\",\"seccionXId\":1,\"id\":7}"
+    }
+  }
+}

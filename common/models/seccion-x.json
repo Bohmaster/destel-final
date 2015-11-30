@@ -1,0 +1,24 @@
+{
+  "name": "SeccionX",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "bloques": {
+      "type": "hasMany",
+      "model": "Bloque",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

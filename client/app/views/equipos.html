@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Oct 23 2015 07:18:14 GMT+0000 (UTC) -->
+<html data-wf-site="54b9a341aba3daf27b32d8cd" data-wf-page="54caa594c7b1fb7312fd4891" ng-app="Destel">
+<head>
+  <meta charset="utf-8">
+  <title>equipos - destel</title>
+  <meta name="description" content="Agente Oficial Telecom Personal. Desde 1999 en constante crecimiento, contando con una amplia red de locales  en las provincias de Santa Fe, Entre Ríos y BsAs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/destel.webflow.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Varela:400","Rajdhani:regular,500,600,700","Cabin:regular,italic,500,500italic,600,600italic,700,700italic","Righteous:regular","Fredoka One:regular","Orbitron:regular,500,700,900"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../assets/js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.jpg">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  <meta itemprop="image" content="http://res.cloudinary.com/dekzb7spe/image/upload/v1429632805/logoFace_fxkpnm.jpg">
+  <!--plugin de facebook-->
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <meta name="google-site-verification" content="t9Dts34-QDPIfkL_b2c-YqM4QcF8JYo-NfkBpOdwKa0" />
+</head>
+<body ng-controller="EquipoController">
+  <div class="w-section seccface" data-ix="facebook">
+    <div class="divbotonhare">
+      <div class="w-embed embedfacebutton">
+        <div class="fb-share-button" data-href="http://destel.webflow.com/" data-layout="button"></div>
+      </div>
+      <div class="textshare">Compartir nuestro sitio web</div>
+    </div>
+    <a class="w-inline-block linkface" href="#"><img class="botonface" src="../assets/images/botonface.png">
+    </a>
+    <div class="w-embed embedface">
+      <div class="fb-page" data-href="https://www.facebook.com/DestelPersonal?fref=ts" data-width="350" data-height="500" data-hide-cover="true" data-show-facepile="true" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="https://www.facebook.com/DestelPersonal?fref=ts"><a href="https://www.facebook.com/DestelPersonal?fref=ts">Destel Personal</a>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section header2">
+    <div class="w-section trama"></div>
+    <div class="w-container">
+      <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" data-easing="ease-in" data-easing2="ease-out">
+        <div class="w-container">
+          <a class="w-nav-brand brand" href="#"><img class="logo" src="../assets/images/logo destel 2.png">
+          </a><img class="logopersonal" src="../assets/images/logopers.png">
+          <nav class="w-nav-menu" role="navigation"><a class="w-nav-link botonnavbar" href="index.html">Inicio</a>
+          </nav>
+          <div class="w-nav-button botonmenu">
+            <div class="w-icon-nav-menu iconomenu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section seccequipos">
+    <div class="w-container contequipos">
+      <div class="promociones"><span class="promos">Equipos</span>
+      </div>
+      <div class="w-form">
+        <form class="form" id="email-form" name="email-form" data-name="Email Form">
+          <div class="w-radio w-clearfix radioboton" id="particular">
+            <input class="w-radio-input" id="radio-2" type="radio" name="radio" value="particular" data-name="Radio" ng-model="filtro" ng-click="getByType()">
+            <label class="w-form-label textcheck" for="radio-2">Particulares</label>
+          </div>
+          <div class="w-radio w-clearfix radioboton" id="empresa">
+            <input class="w-radio-input" id="radio" type="radio" name="radio" value="empresa" data-name="Radio" ng-model="filtro" ng-click="getByType()">
+            <label class="w-form-label textcheck" for="radio">Empresas</label>
+          </div>
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form :(</p>
+        </div>
+      </div>
+
+      <div class="w-embed">
+        <div class="w-row rowequipos">
+          <div class="w-col w-col-4" ng-repeat="equipo in equipos">
+            <div class="divpromos"><img class="imgpromo" src="../storage/images/{{ equipo.image }}" alt="54c98d0a3163c87c2a023cdb_Xperia.png"><img class="img4g" src="../assets/images/4g.png" alt="55358a302dbe64e575cdd620_4g.png" ng-show="{{ equipo.cuatroG}}">
+              <div class="titpromo">{{ equipo.name }}</div>
+              <div class="oferta1">
+                <div ng-show="filtro == 'particular'">Desde $ {{ equipo.price_cuit }} </div>
+                <div ng-show="filtro == 'empresa'">Desde $ {{ equipo.price_dni }} + IMP </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  <div class="w-section seccfooter">
+    <div class="w-container">
+      <div class="textfooter">DESTEL&nbsp;&nbsp;|&nbsp;&nbsp;2015&nbsp;&nbsp;|&nbsp;&nbsp;Todos los derechos reservados</div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+  <script src="../vendor/angular/angular.js"></script>
+  <script src="../vendor/angular-resource/angular-resource.js"></script>
+  <script src="../vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="../vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="../vendor/angular-animate/angular-animate.js"></script>
+
+  <!-- Destel App -->
+
+  <script src="../destel.js"></script>
+  <script src="../services/lb-services.js"></script>
+  <script src="../controllers/HomeController.js"></script>
+  <script src="../controllers/EquipoController.js"></script>
+
+</body>
+</html>

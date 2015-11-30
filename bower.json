@@ -1,0 +1,31 @@
+{
+  "name": "Destel",
+  "version": "0.0.0",
+  "authors": [
+    "Bohmaster <voidhmaster@gmail.com>"
+  ],
+  "description": "Destel Norte Application",
+  "main": "client/app/destel.js",
+  "keywords": [
+    "Destel",
+    "Personal"
+  ],
+  "license": "MIT",
+  "homepage": "www.destelnorte.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/app/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.7",
+    "angular-bootstrap": "~0.14.3",
+    "bootstrap": "~3.3.5",
+    "angular-animate": "~1.4.7"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Destacado",
+  "base": "Equipo",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "cuadro_1": {
+      "type": "string"
+    },
+    "cuadro_2": {
+      "type": "string"
+    },
+    "cuadro_3": {
+      "type": "string"
+    },
+    "cuadro_4": {
+      "type": "string"
+    },
+    "iva": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Slider": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Faja": {
+    "dataSource": "db",
+    "public": true
+  },
+  "container": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Equipo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Destacado": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Categoria": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Promotion": {
+    "dataSource": "db",
+    "public": true
+  },
+  "SeccionX": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Bloque": {
+    "dataSource": "db",
+    "public": true
+  }
+}

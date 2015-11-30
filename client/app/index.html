@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Oct 23 2015 07:18:14 GMT+0000 (UTC) -->
+<html data-wf-site="54b9a341aba3daf27b32d8cd" data-wf-page="54b9a341aba3daf27b32d8ce" ng-app="Destel">
+<head>
+  <meta charset="utf-8">
+  <title>Destel SA | 4g -telefonía celular-personal-chip-teléfono-accesorios</title>
+  <meta name="description" content="Agente Oficial Telecom Personal. Desde 1999 en constante crecimiento, contando con una amplia red de locales  en las provincias de Santa Fe, Entre Ríos y BsAs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/destel.webflow.css">
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Varela:400","Rajdhani:regular,500,600,700","Cabin:regular,italic,500,500italic,600,600italic,700,700italic","Righteous:regular","Fredoka One:regular","Orbitron:regular,500,700,900"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.jpg">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  <meta itemprop="image" content="http://res.cloudinary.com/dekzb7spe/image/upload/v1429632805/logoFace_fxkpnm.jpg">
+  <!--plugin de facebook-->
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <meta name="google-site-verification" content="t9Dts34-QDPIfkL_b2c-YqM4QcF8JYo-NfkBpOdwKa0" />
+</head>
+<body data-ix="cambiafondo" ng-controller="HomeController">
+  <div class="w-section seccface" data-ix="facebook">
+    <div class="divbotonhare">
+      <div class="w-embed embedfacebutton">
+        <div class="fb-share-button" data-href="http://destel.webflow.com/" data-layout="button"></div>
+      </div>
+      <div class="textshare">Compartir nuestro sitio web</div>
+    </div>
+    <a class="w-inline-block linkface" href="#"><img class="botonface" src="assets/images/botonface.png">
+    </a>
+    <div class="w-embed embedface">
+      <div class="fb-page" data-href="https://www.facebook.com/DestelPersonal?fref=ts" data-width="350" data-height="500" data-hide-cover="true" data-show-facepile="true" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="https://www.facebook.com/DestelPersonal?fref=ts"><a href="https://www.facebook.com/DestelPersonal?fref=ts">Destel Personal</a>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section header2">
+    <div class="w-section trama"></div>
+    <div class="w-container">
+      <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" data-easing="ease-in" data-easing2="ease-out">
+        <div class="w-container">
+          <a class="w-nav-brand brand" href="#"><img class="logo" src="assets/images/logo destel 2.png">
+          </a><img class="logopersonal" src="assets/images/logopers.png">
+          <nav class="w-nav-menu" role="navigation"><a class="w-nav-link botonnavbar" href="#home">Inicio</a>
+            <div class="w-dropdown dropdown" data-delay="0" data-ix="desplazar">
+              <div class="w-dropdown-toggle botonnavbar" data-ix="desplazar">
+                <div>Servicios</div>
+                <div class="w-icon-dropdown-toggle icondrop"></div>
+              </div>
+
+              <nav class="w-dropdown-list droplist" data-ix="desplazar"><a class="w-dropdown-link textdrop" href="views/equipos.html">Equipos</a><a class="w-dropdown-link textdrop" href="accesorios.html">Accesorios</a><a class="w-dropdown-link textdrop" href="seccion.html">{{seccion[0].nombre}}</a>
+              </nav>
+            </div><a class="w-nav-link botonnavbar" href="#promos">Destacados</a><a class="w-nav-link botonnavbar" href="#promo">Promociones</a><a class="w-nav-link botonnavbar" href="#contacto">Contacto</a>
+          </nav>
+          <div class="w-nav-button botonmenu">
+            <div class="w-icon-nav-menu iconomenu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section sslider" id="home">
+    <div style="height: auto; position: relative;" id="inicio">
+
+      <uib-carousel interval="3000" style="height: 350px;">
+        <uib-slide ng-repeat="slide in sliders" active="slide.active">
+          <img src="storage/images/{{slide.image}}" height="100%" width="100%" style="margin: auto; z-index: 0" alt=""/>
+        </uib-slide>
+      </uib-carousel>
+
+    </div>
+  </div>
+  <div class="w-section seccinicio" id="servicios" data-ix="cambiafondo">
+    <div class="w-section seccinicio1" data-ix="cambiafondo">
+      <div class="w-container continicio">
+        <div class="w-row rowinicio">
+          <div class="w-col w-col-3 colinicio" data-ix="inicio">
+            <a class="w-inline-block linkservicios" href="equipos.html" target="_blank"><img class="imginicio" src="assets/images/equipos.png">
+              <h2 class="h2inicio">Equipos</h2>
+              <p class="parrainicio equipos">Renová tu equipo. Conocé los modelos disponibles que más se adapten a tu estilo.</p>
+            </a>
+          </div>
+          <div class="w-col w-col-3 colinicio planes" data-ix="inicio">
+            <div class="divplanes"><img class="imginicio" src="assets/images/planes.png">
+              <h2 class="h2inicio">Planes</h2>
+              <p class="parrainicio servicios">Actualizá tu plan. Descubrí los abonos Día Full que Personal tiene para vos.
+                <br><a href="http://www.personal.com.ar">Individuos</a>
+                <br><a href="http://www.personal.com.ar/empresas/">Empresas</a>
+              </p>
+            </div>
+          </div>
+          <div class="w-col w-col-3 colinicio" data-ix="inicio">
+            <div>
+              <a class="w-inline-block linkservicios" href="#promo"><img class="imginicio" src="assets/images/promos.png">
+                <h2 class="h2inicio">Promociones</h2>
+                <p class="parrainicio promoc">Aprovechá las ofertas disponibles para Individuos y Pymes.</p>
+              </a>
+            </div>
+          </div>
+          <div class="w-col w-col-3 colinicio" data-ix="inicio">
+            <a class="w-inline-block linkservicios" href="accesorios.html" target="_blank"><img class="imginicio" src="assets/images/insumos2.png">
+              <h2 class="h2inicio">Insumos</h2>
+              <p class="parrainicio insumos">Dale un estilo Personal a tu celular. Conocé nuestra variada gama de accesorios para cada modelo con INSIGHT DISTRIBUCIONES</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-section seccinter1">
+
+      <img src="storage/images/{{fajas[0].image}}" alt=""/>
+    </div>
+  </div>
+  <div class="w-section seccpromogde" data-ix="cambiafondo-2">
+    <div class="w-section seccpromos" id="promos"><img class="fotopromos" src="assets/images/porta.png">
+      <div class="promociones"><span class="promos">Destacados</span>
+      </div>
+      <div class="w-container contpromos">
+        <div class="w-row">
+          <div class="w-col w-col-4 copromos">
+            <div class="subtitpromo">Línea nueva y cambio de terminal (DNI)</div>
+            <div class="divpromos" ng-repeat="uno in destacados_dni">
+              <img class="imgpromo" src="storage/images/{{uno.image}}"><img class="img4g" src="assets/images/4g.png" ng-show="uno.cuatroG">
+              <div class="titpromo">{{uno.marca}}
+                <br>{{uno.name}}</div>
+              <div class="w-clearfix divpromo">
+                <div class="divpromo1">{{uno.price_dni}}</div>
+                <div class="textiva" ng-if="uno.iva">Precio + IVA</div>
+                <div class="divpromo2" bg="{{uno.cuadro_1}}">
+                </div>
+                <div class="divpromo3" bg="{{uno.cuadro_2}}">
+
+                </div>
+                <div class="divpromo4" bg="{{uno.cuadro_3}}">
+
+                </div>
+                <div class="divpromo5" bg="{{uno.cuadro_4}}">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-4 copromos">
+            <div class="subtitpromo">Traé tu línea
+              <br> a&nbsp;&nbsp;Personal&nbsp;</div>
+            <div class="divpromos" ng-repeat="uno in destacados_veni">
+              <img class="imgpromo" src="storage/images/{{uno.image}}"><img class="img4g" src="assets/images/4g.png" ng-show="uno.cuatroG">
+              <div class="titpromo">{{uno.marca}}
+                <br>{{uno.name}}</div>
+              <div class="w-clearfix divpromo">
+                <div class="divpromo1">{{uno.price_dni}}</div>
+                <div class="textiva" ng-if="uno.iva">Precio + IVA</div>
+                <div class="divpromo2" bg="{{uno.cuadro_1}}">
+                </div>
+                <div class="divpromo3" bg="{{uno.cuadro_2}}">
+
+                </div>
+                <div class="divpromo4" bg="{{uno.cuadro_3}}">
+
+                </div>
+                <div class="divpromo5" bg="{{uno.cuadro_4}}">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-4 copromo">
+            <div class="subtitpromo">Línea nueva y Cambio de terminal (CUIT)</div>
+            <div class="divpromos" ng-repeat="uno in destacados_cuit">
+              <img class="imgpromo" src="storage/images/{{uno.image}}"><img class="img4g" src="assets/images/4g.png" ng-show="uno.cuatroG">
+              <div class="titpromo">{{uno.marca}}
+                <br>{{uno.name}}</div>
+              <div class="w-clearfix divpromo">
+                <div class="divpromo1">{{uno.price_dni}}</div>
+                <div class="textiva" ng-if="uno.iva">Precio + IVA</div>
+                <div class="divpromo2" bg="{{uno.cuadro_1}}">
+                </div>
+                <div class="divpromo3" bg="{{uno.cuadro_2}}">
+
+                </div>
+                <div class="divpromo4" bg="{{uno.cuadro_3}}">
+
+                </div>
+                <div class="divpromo5" bg="{{uno.cuadro_4}}">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-section seccinter1 dos">
+      <img src="storage/images/{{fajas[1].image}}" alt=""/>
+    </div>
+  </div>
+  <div class="w-section seccpromo" id="promo">
+    <div class="promociones"><span class="promos">Promociones</span>
+    </div>
+    <div class="w-container contpromo">
+      <div style="float: left; position: relative; width: auto; margin: 6px;" ng-repeat="p in promos">
+        <img src="storage/images/{{p.image}}" width="300" alt=""/>
+      </div>
+    </div>
+  </div>
+  <div class="w-section contacto" id="contacto">
+    <div class="w-container">
+      <div class="promociones">Contacto</div>
+      <div class="textctacto">Envianos tu consulta y a la brevedad te responderemos.&nbsp;</div>
+      <div class="w-form">
+        <form class="formctacto" id="email-form" name="email-form" data-name="Email Form">
+          <input class="w-input text" id="Nombre" type="text" placeholder="Nombre" name="Nombre" data-name="Nombre">
+          <input class="w-input text" id="linea" type="text" placeholder="Nº de línea" name="linea" data-name="linea" required="required">
+          <textarea class="w-input text" id="Consulta" placeholder="Consulta" name="Consulta" required="required" data-name="Consulta"></textarea>
+          <div class="divradiobutton">
+            <div class="w-radio w-clearfix radiobutton">
+              <input class="w-radio-input" id="empresa" type="radio" name="Condicion" value="empresa" data-name="Condicion" required="required">
+              <label class="w-form-label sabe" for="empresa">Empresa</label>
+            </div>
+            <div class="w-radio w-clearfix radiobutton">
+              <input class="w-radio-input" id="particular" type="radio" name="Condicion" value="particular" data-name="Condicion" required="required">
+              <label class="w-form-label radiobutton" for="particular">Particular</label>
+            </div>
+          </div>
+          <input class="w-button input" type="submit" value="Enviar" data-wait="Please wait...">
+        </form>
+        <div class="w-form-done">
+          <p>Gracias! su envío ha sido recibido.</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Lo sentimos. Ha ocurrido un error mientras se enviaba el Email :(</p>
+        </div>
+      </div>
+    </div>
+    <div class="w-section seccdatos">
+      <div class="w-container contdatos">
+        <div class="w-row tel">
+          <div class="w-col w-col-6 coldatos"><img class="imgiconocontacto" src="assets/images/mail.png">
+            <h2>contacto@destelnorte.com.ar</h2>
+          </div>
+          <div class="w-col w-col-6 coldatos"><img class="imgiconocontacto" src="assets/images/telefono.png">
+            <h2>(0341) 4552880 / 4543800</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rosario">Rosario, Santa Fé, Argentina</div>
+  </div>
+  <div class="w-section seccmapa">
+    <div class="divmapa" data-ix="mapa">Click para acceder</div>
+    <div class="w-embed w-iframe embedmapa" data-ix="mapa2">
+      <iframe src="https://www.google.com/maps/d/embed?mid=zKkBm4Ys7FkM.kgzBF4QURIrA" width="100%" height="480"></iframe>
+    </div>
+  </div>
+  <div class="w-section seccfooter">
+    <div class="w-container">
+      <div class="textfooter" ng-click="goToAdmin()">DESTEL&nbsp;&nbsp;|&nbsp;&nbsp;2015&nbsp;&nbsp;|&nbsp;&nbsp;Todos los derechos reservados</div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="vendor/slippry-1.3.1/dist/slippry.min.js"></script>
+  <script type="text/javascript" src="assets/js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-animate/angular-animate.js"></script>
+
+  <!-- Destel App -->
+
+  <script src="destel.js"></script>
+  <script src="services/lb-services.js"></script>
+  <script src="controllers/HomeController.js"></script>
+  <script>
+    angular.module('Destel')
+      .directive('bg', function() {
+        return {
+          restrict: 'A',
+          link: function(scope, tElem, tAttrs) {
+            var imageUrl = tAttrs.bg;
+            console.log(imageUrl);
+            tElem.css('background-image', "url('../storage/images/" + imageUrl + "')");
+            console.log(77, tElem.css('background-image'));
+          }
+        }
+      });
+  </script>
+
+
+</body>
+</html>
